@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Inventory tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="features.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,9 +35,6 @@
     </div>
   </div>
   <div class="container">
-    <img src="" alt="">
-  </div>
-  <div class="container">
     <div class="card-group">
       <div class="card">
         <img src="inventory.jpg" class="card-img-top" alt="...">
@@ -46,52 +47,54 @@
         <img src="truck.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"> Vehicles</h5>
-          <p class="card-text">Track how many vehicles you have that are on the road or stationed at your parking lot.</p>
+          <p class="card-text">Track how many vehicles you have and their value.</p>
         </div>
       </div>
       <div class="card">
         <img src="location.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Loactions</h5>
-          <p class="card-text">Track what locations you have open compared to those that are closed.</p>
+          <p class="card-text">Track how many locations you have and their value.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="card-group">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Main Office</h5>
-        <p class="card-text">Vlocity Headquarters – Salesforce Tower, 415 Mission St 50th floor, San Francisco, CA 94105</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.00954916633!2d-122.39909368468192!3d37.789815979756796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581b327357d61%3A0xb1c7f5f2ae9f9ac!2sVlocity%20Headquarters%20%E2%80%93%20Salesforce%20Tower!5e0!3m2!1sen!2sus!4v1588448968499!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-    </div>
-    <div class="card text-center">
-      <div class="card-body">
-  <br><br><br><br><br>
-        <h5 class="card-title">Contact Information</h5>
-        <a class="card-text">(415) 384 2840</a>
-        <br>
-        <a href=mailto:<nowiki>help@inventory.tracker</a>
-        <br>
-        <div class="text-center">
-          <img src="logo.jpg" width="400" height="400"alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br><br><br>
   <div class="container">
-    <footer>
-      &copy; Copyright 2020 Inventory Tracker.
-    </footer>
-    <br>
-    <form class="form-inline">
-      <label class="sr-only" for="inlineFormInputName2">Email</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Email">
-      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-      <button type="submit" class="btn btn-primary mb-2">Submit</button>
-    </form>
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Main Office</h5>
+          <p class="card-text">Vlocity Headquarters – Salesforce Tower, 415 Mission St 50th floor, San Francisco, CA 94105</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.00954916633!2d-122.39909368468192!3d37.789815979756796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581b327357d61%3A0xb1c7f5f2ae9f9ac!2sVlocity%20Headquarters%20%E2%80%93%20Salesforce%20Tower!5e0!3m2!1sen!2sus!4v1588448968499!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-body">
+    <br><br><br><br><br>
+          <h5 class="card-title">Contact Information</h5>
+          <a class="card-text">(415) 384 2840</a>
+          <br>
+          <a href=mailto:<nowiki>help@inventory.tracker</a>
+          <br>
+          <div class="text-center">
+            <img src="Logo.jpg" width="400" height="400"alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <div class="container">
+      <footer>
+        &copy; Copyright 2020 Inventory Tracker.
+      </footer>
+      <br>
+      <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputName2">Email</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Email">
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
+    </div>
   </div>
   <br><br><br><br>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
